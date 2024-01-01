@@ -105,3 +105,53 @@ body {
   font-size: 16px;
   font-family: "Courier New", Courier, monospace;
 }
+
+h1 {
+  text-align: center;
+  margin-top: 25px;
+  height: 10vh;
+}
+
+#main-content {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  height: 90vh;
+  margin-top: 50px;
+}
+
+#validation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.form-item {
+  display: flex;
+  width: 500px;
+  align-items: center;
+}
+
+label {
+  margin-right: 20px;
+  width: 175px;
+}
+
+input {
+  flex: 1;
+}
+
+.invalid-input {
+  border: 3px solid red;
+}
+
+#submit-button {
+  width: 200px;
+  background-color: var(--main-color);
+  color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+}

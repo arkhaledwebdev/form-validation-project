@@ -3,12 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Webpack Template</title>
+    <title>Form Validation Project</title>
     <link rel="stylesheet" href="./style.css" />
-    <script src="../dist/main.js"></script>
+    <script src="../dist/main.js" defer></script>
   </head>
   <body>
-    <h1>Webpack Template</h1>
-    <div id="main-content"></div>
+    <h1>Form Validation Project</h1>
+    <div id="main-content">
+      <form id="validation-form">
+        <!-- E-mail -->
+        <div class="email form-item">
+          <label for="form-email">E-mail: </label>
+          <input type="text" id="form-email" />
+        </div>
+
+        <!-- Country -->
+        <div class="country form-item">
+          <label for="form-country">Country: </label>
+          <select id="form-country">
+            <option value="ch">Switzerland</option>
+            <option value="fr">France</option>
+            <option value="de">Germany</option>
+            <option value="nl">The Netherlands</option>
+          </select>
+        </div>
+        <!-- Zip Code -->
+        <div class="zip form-item">
+          <label for="form-zip">Zip Code: </label>
+          <input type="text" id="form-zip" />
+        </div>
+        <!-- password -->
+        <div class="password form-item">
+          <label for="form-password">Password: </label>
+          <input type="password" id="form-password" />
+        </div>
+        <!-- confirm password -->
+        <div class="confirm-password form-item">
+          <label for="form-confirm-password">Confirm Password: </label>
+          <input type="password" id="form-confirm-password" />
+        </div>
+
+        <button id="submit-button" value="submit" type="submit">Submit</button>
+      </form>
+    </div>
   </body>
 </html>
