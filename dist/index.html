@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation Project</title>
+    <link rel="stylesheet" href="57011448dc08b9372b5e.css" />
+    <script src="b28c97de43a9ca1c8e8f.js" defer></script>
+  <script defer src="main.js"></script></head>
+  <body>
+    <h1>Form Validation Project</h1>
+    <div id="main-content">
+      <form id="validation-form">
+        <!-- E-mail -->
+        <div class="email form-item">
+          <label for="form-email">E-mail: </label>
+          <input type="text" id="form-email" />
+        </div>
+
+        <!-- Country -->
+        <div class="country form-item">
+          <label for="form-country">Country: </label>
+          <select id="form-country">
+            <option value="ch">Switzerland</option>
+            <option value="fr">France</option>
+            <option value="de">Germany</option>
+            <option value="nl">The Netherlands</option>
+          </select>
+        </div>
+        <!-- Zip Code -->
+        <div class="zip form-item">
+          <label for="form-zip">Zip Code: </label>
+          <input type="text" id="form-zip" />
+        </div>
+        <!-- password -->
+        <div class="password form-item">
+          <label for="form-password">Password: </label>
+          <input type="password" id="form-password" />
+        </div>
+        <!-- confirm password -->
+        <div class="confirm-password form-item">
+          <label for="form-confirm-password">Confirm Password: </label>
+          <input type="password" id="form-confirm-password" />
+        </div>
+
+        <button id="submit-button" value="submit" type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
